@@ -1,0 +1,30 @@
+span.this {
+  font-weight: bold;
+  background: lightgray;
+  padding: .3em .8em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.play-container {
+  padding: 3em;
+  border: 1px solid lightgray;
+  margin-bottom: 1em;
+
+  &.onFire{
+    background-color: rgb(246, 117, 117);
+  }
+
+  &.overheating{
+    background-color: saturate($color: rgb(246, 117, 117), $amount: 30);
+  }
+
+  input {
+      padding: 1em;
+      margin-bottom: 2em;
+  }
+}
+
+.active{
+  color: #FFF;
+}
